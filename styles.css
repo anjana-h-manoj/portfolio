@@ -942,7 +942,7 @@ section:nth-of-type(even)::before {
 
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(440px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
   gap: 24px;
 }
 
@@ -987,7 +987,7 @@ section:nth-of-type(even)::before {
 }
 
 .project-image {
-  height: 140px;
+  height: 110px;
   overflow: hidden;
   background: var(--bg-primary);
   border-bottom: 1px solid var(--border-default);
@@ -1015,23 +1015,23 @@ section:nth-of-type(even)::before {
 }
 
 .project-info {
-  padding: 24px;
+  padding: 18px;
   flex: 1;
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 8px;
 }
 
 .project-info h3 {
-  font-size: 1.15rem;
+  font-size: 1.05rem;
   font-weight: 700;
   color: var(--text-primary);
 }
 
 .project-info p {
-  font-size: 0.88rem;
+  font-size: 0.82rem;
   color: var(--text-secondary);
-  line-height: 1.6;
+  line-height: 1.5;
   flex: 1;
 }
 
