@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Portfolio of Anjana Manoj - Computer Science Engineer specializing in AI/ML, Flutter Development, and Software Engineering.">
+    <meta name="keywords" content="Anjana Manoj, Computer Science, AI, Machine Learning, Flutter, Developer, Portfolio">
+    <meta name="author" content="Anjana Manoj">
+    <meta property="og:title" content="Anjana Manoj | CS Engineer & Developer">
+    <meta property="og:description"
+        content="Systems Engineer | Computer Science Engineer | AI & ML Engineer | Flutter Developer">
+    <meta property="og:type" content="website">
+    <title>Anjana Manoj | Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Fonts: Outfit (headings), Inter (body), JetBrains Mono (tech labels) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Devicon for language/tool logos -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+
+    <!-- Font Awesome for brand icons (Gmail, GitHub, LinkedIn) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Lucide for consistent UI icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body>
+    <div id="grid-overlay"></div>
+    <div id="scroll-progress"></div>
+
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">AM</a>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#education" class="nav-link">Education</a></li>
+                <li><a href="#github" class="nav-link">GitHub</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="hero">
+        <div class="hero-bg-particles" id="particles"></div>
+        <div class="hero-content">
+            <p class="hero-greeting">// Hello, I'm</p>
+            <h1 class="hero-name">Anjana Manoj</h1>
+            <h2 class="hero-title"><span id="typed-text"></span><span class="cursor">|</span></h2>
+            <p class="hero-tagline">Passionate about building intelligent solutions, mobile applications, and innovative
+                technologies that solve real-world problems.</p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn btn-primary">
+                    View Projects
+                    <i data-lucide="arrow-right"></i>
+                </a>
+                <a href="#contact" class="btn btn-outline">
+                    Contact Me
+                    <i data-lucide="mail"></i>
+                </a>
+            </div>
+            <div class="hero-socials">
+                <a href="https://github.com/anjana-h-manoj" target="_blank" rel="noopener" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/anjana-manoj-09081a257/" target="_blank" rel="noopener"
+                    aria-label="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="#contact" aria-label="Email">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+        </div>
+        <a href="#about" class="scroll-down" aria-label="Scroll down">
+            <i data-lucide="arrow-down"></i>
+        </a>
+    </section>
+
+    <section id="about">
+        <div class="container">
+
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text glass-card">
+                    <p>B.Tech Graduate in <strong>Computer Science and Engineering</strong></p>
+                    <p>Strong interest in <span class="highlight">Software Development</span>, <span
+                            class="highlight">Artificial Intelligence</span>, <span class="highlight">Machine
+                            Learning</span>, <span class="highlight">Mobile App Development</span>, and <span
+                            class="highlight">Emerging Technologies</span>.</p>
+                    <p>Seeking opportunities to contribute, learn, and grow as an IT professional in a dynamic and
+                        innovative environment.</p>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-card glass-card">
+                        <div class="stat-icon">
+                            <i data-lucide="code-2"></i>
+                        </div>
+                        <h3 class="stat-number" data-target="10" data-suffix="+">0+</h3>
+                        <p>Skills</p>
+                    </div>
+                    <div class="stat-card glass-card">
+                        <div class="stat-icon">
+                            <i data-lucide="folder-git-2"></i>
+                        </div>
+                        <h3 class="stat-number" data-target="2" data-suffix="+">0+</h3>
+                        <p>Projects</p>
+                    </div>
+                    <div class="stat-card glass-card">
+                        <div class="stat-icon">
+                            <i data-lucide="award"></i>
+                        </div>
+                        <h3 class="stat-number" data-target="2" data-suffix="">0</h3>
+                        <p>Certifications</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="container">
+
+            <h2 class="section-title">Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card glass-card" data-category="language">
+                    <div class="skill-icon">
+                        <i class="devicon-python-plain colored"></i>
+                    </div>
+                    <h3>Python</h3>
+                    <div class="skill-bar">
+                        <div class="skill-fill" data-width="90"></div>
+                    </div>
+                </div>
+                <div class="skill-card glass-card" data-category="mobile">
+                    <div class="skill-icon">
+                        <i class="devicon-flutter-plain colored"></i>
+                    </div>
+                    <h3>Flutter</h3>
+                    <div class="skill-bar">
+                        <div class="skill-fill" data-width="85"></div>
+                    </div>
+                </div>
+                <div class="skill-card glass-card" data-category="language">
+                    <div class="skill-icon">
+                        <i class="devicon-c-plain colored"></i>
+                    </div>
+                    <h3>C Programming</h3>
+                    <div class="skill-bar">
+                        <div class="skill-fill" data-width="80"></div>
+                    </div>
+                </div>
+                <div class="skill-card glass-card" data-category="web">
+                    <div class="skill-icon">
+                        <i class="devicon-html5-plain colored"></i>
+                    </div>
+                    <h3>HTML</h3>
+                    <div class="skill-bar">
+                        <div class="skill-fill" data-width="90"></div>
+                    </div>
+                </div>
+                <div class="skill-card glass-card" data-category="web">
+                    <div class="skill-icon">
+                        <i class="devicon-css3-plain colored"></i>
+                    </div>
+                    <h3>CSS</h3>
+                    <div class="skill-bar">
+                        <div class="skill-fill" data-width="85"></div>
+                    </div>
+                </div>
+                <div class="skill-card glass-card" data-category="web">
+                    <div class="skill-icon">
+                        <i class="devicon-javascript-plain colored"></i>
+                    </div>
+                    <h3>JavaScript</h3>
+                    <div class="skill-bar">
+                        <div class="skill-fill" data-width="80"></div>
+                    </div>
+                </div>
+                <div class="skill-card glass-card" data-category="database">
+                    <div class="skill-icon">
+                        <i class="devicon-mysql-plain colored"></i>
+                    </div>
+                    <h3>MySQL</h3>
+                    <div class="skill-bar">
+                        <div class="skill-fill" data-width="80"></div>
+                    </div>
+                </div>
+                <div class="skill-card glass-card" data-category="database">
+                    <div class="skill-icon">
+                        <i data-lucide="database"></i>
+                    </div>
+                    <h3>DBMS</h3>
+                    <div class="skill-bar">
+                        <div class="skill-fill" data-width="75"></div>
+                    </div>
+                </div>
+                <div class="skill-card glass-card" data-category="ai">
+                    <div class="skill-icon">
+                        <i data-lucide="cpu"></i>
+                    </div>
+                    <h3>AI & ML</h3>
+                    <div class="skill-bar">
+                        <div class="skill-fill" data-width="85"></div>
+                    </div>
+                </div>
+                <div class="skill-card glass-card" data-category="tools">
+                    <div class="skill-icon">
+                        <i class="devicon-firebase-plain colored"></i>
+                    </div>
+                    <h3>Firebase</h3>
+                    <div class="skill-bar">
+                        <div class="skill-fill" data-width="75"></div>
+                    </div>
+                </div>
+                <div class="skill-card glass-card" data-category="tools">
+                    <div class="skill-icon">
+                        <i class="devicon-git-plain colored"></i>
+                    </div>
+                    <h3>Git & GitHub</h3>
+                    <div class="skill-bar">
+                        <div class="skill-fill" data-width="85"></div>
+                    </div>
+                </div>
+                <div class="skill-card glass-card" data-category="tools">
+                    <div class="skill-icon">
+                        <i class="devicon-vscode-plain colored"></i>
+                    </div>
+                    <h3>VS Code</h3>
+                    <div class="skill-bar">
+                        <div class="skill-fill" data-width="90"></div>
+                    </div>
+                </div>
+                <div class="skill-card glass-card" data-category="tools">
+                    <div class="skill-icon">
+                        <i class="devicon-android-plain colored"></i>
+                    </div>
+                    <h3>Android Studio</h3>
+                    <div class="skill-bar">
+                        <div class="skill-fill" data-width="80"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="container">
+
+            <h2 class="section-title">Projects</h2>
+            <div class="project-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="ai">AI / ML</button>
+                <button class="filter-btn" data-filter="mobile">Mobile</button>
+                <button class="filter-btn" data-filter="web">Web</button>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card glass-card" data-category="ai">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i data-lucide="ship"></i>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Maritime Ship Detection Using Machine Learning</h3>
+                        <p>AI-powered ship detection and classification system using YOLOv8 and ResNet18. Features image
+                            preprocessing, object detection, classification, and visual analytics for maritime
+                            surveillance.</p>
+                        <div class="project-tags">
+                            <span>Python</span><span>YOLOv8</span><span>ResNet18</span><span>ML</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn btn-sm">
+                                Live Demo
+                                <i data-lucide="external-link"></i>
+                            </a>
+                            <a href="https://github.com/anjana-h-manoj/OceanI" target="_blank" rel="noopener" class="btn btn-sm btn-outline">
+                                Code
+                                <i data-lucide="github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card glass-card" data-category="mobile">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i data-lucide="navigation"></i>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Travel Guide Application</h3>
+                        <p>Flutter-based mobile application with location-based tourist information. Integrated Firebase
+                            Firestore to display attractions, transport details, food spots, and travel information.</p>
+                        <div class="project-tags">
+                            <span>Flutter</span><span>Firebase</span><span>Dart</span><span>Mobile</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn btn-sm">
+                                Live Demo
+                                <i data-lucide="external-link"></i>
+                            </a>
+                            <a href="https://github.com/anjana-h-manoj/belloVista" target="_blank" rel="noopener" class="btn btn-sm btn-outline">
+                                Code
+                                <i data-lucide="github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="education">
+        <div class="container">
+
+            <h2 class="section-title">Education & Certifications</h2>
+            <div class="timeline">
+                <div class="timeline-item glass-card">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2022 - 2026</span>
+                        <h3>B.Tech in Computer Science and Engineering</h3>
+                        <p class="timeline-org">Sree Buddha College of Engineering</p>
+                        <p class="timeline-sub">APJ Abdul Kalam Technological University</p>
+                        <p class="timeline-sub">CGPA: 8.4</p>
+                    </div>
+                </div>
+                <div class="timeline-item glass-card">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">Certification</span>
+                        <h3>
+                            <a href="https://www.linkedin.com/posts/anjana-manoj-09081a257_nptel-activity-7378353966851612672-dzJo?utm_source=social_share_send&amp;utm_medium=member_desktop_web&amp;rcm=ACoAAD9NpOwBbCiadMLvJnI2LzrRdkXGwKcsCnM" target="_blank" rel="noopener" class="cert-link">
+                                Programming in Python
+                                <i data-lucide="external-link"></i>
+                            </a>
+                        </h3>
+                        <p class="timeline-org">NPTEL</p>
+                    </div>
+                </div>
+                <div class="timeline-item glass-card">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">Certification</span>
+                        <h3>
+                            <a href="https://www.linkedin.com/posts/anjana-manoj-09081a257_full-stack-web-development-with-ai-tools-activity-7455998385901412352-G5Bv?utm_source=social_share_send&amp;utm_medium=member_desktop_web&amp;rcm=ACoAAD9NpOwBbCiadMLvJnI2LzrRdkXGwKcsCnM" target="_blank" rel="noopener" class="cert-link">
+                                Full Stack Development with AI Tools
+                                <i data-lucide="external-link"></i>
+                            </a>
+                        </h3>
+                        <p class="timeline-org">Edunet Foundation under EY NextGen Employability Program</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience">
+        <div class="container">
+
+            <h2 class="section-title">Experience & Leadership</h2>
+            <div class="timeline">
+                <div class="timeline-item glass-card">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2024 - 2025</span>
+                        <h3>Execom Member, muLearn</h3>
+                        <ul class="experience-list">
+                            <li>Contributed to peer-learning activities</li>
+                            <li>Collaborated with student teams</li>
+                            <li>Promoted technical skill development</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="github">
+        <div class="container">
+
+            <h2 class="section-title">GitHub Repositories</h2>
+            <div class="github-grid" id="github-repos">
+                <div class="loading-spinner">
+                    <div class="spinner"></div>
+                    <p>Loading repositories...</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info glass-card">
+                    <h3>Let's work together</h3>
+                    <p>Feel free to reach out for collaborations or just a friendly hello!</p>
+                    <div class="contact-links">
+                        <a href="#contact" class="contact-link">
+                            <i class="fas fa-envelope"></i>
+                            <span>Send a Message</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/anjana-manoj-09081a257/" target="_blank" rel="noopener"
+                            class="contact-link">
+                            <i class="fab fa-linkedin-in"></i>
+                            <span>LinkedIn Profile</span>
+                        </a>
+                        <a href="https://github.com/anjana-h-manoj" target="_blank" rel="noopener" class="contact-link">
+                            <i class="fab fa-github"></i>
+                            <span>GitHub Profile</span>
+                        </a>
+                    </div>
+                </div>
+                <form class="contact-form glass-card" id="contact-form">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" placeholder="John Doe" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Your Email</label>
+                        <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" placeholder="Let's build something together"
+                            required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Your Message</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..."
+                            required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full">
+                        Send Message
+                        <i data-lucide="send"></i>
+                    </button>
+                    <div class="form-status" id="form-status"></div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2026 Anjana Manoj. All rights reserved.</p>
+                <p class="footer-tagline">Designed & Developed by <strong>Anjana Manoj</strong></p>
+                <div class="footer-socials">
+                    <a href="https://github.com/anjana-h-manoj" target="_blank" rel="noopener" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/anjana-manoj-09081a257/" target="_blank" rel="noopener"
+                        aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="#contact" aria-label="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
