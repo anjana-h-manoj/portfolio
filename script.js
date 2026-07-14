@@ -295,48 +295,14 @@
         }
         return;
       }
+      const mailto=`mailto:anjanamanoj1210@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent('From: '+name+' ('+email+')\n\n'+message)}`;
+      window.location.href=mailto;
       if (formStatus) {
-        formStatus.textContent='Sending message...';
-        formStatus.style.color='var(--text-secondary)';
+        formStatus.textContent='Opening your email client...';
+        formStatus.style.color='#3fb950';
       }
-      fetch('https://api.web3forms.com/submit', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-          'Accept': 'application/json'
-        },
-        body: JSON.stringify({
-          access_key: 'YOUR_WEB3FORMS_ACCESS_KEY',
-          name: name,
-          email: email,
-          subject: subject,
-          message: message
-        })
-      })
-      .then(async (response) => {
-        let json = await response.json();
-        if (response.status == 200) {
-          if (formStatus) {
-            formStatus.textContent = 'Message sent successfully!';
-            formStatus.style.color = '#3fb950';
-          }
-          form.reset();
-        } else {
-          if (formStatus) {
-            formStatus.textContent = json.message || 'Something went wrong!';
-            formStatus.style.color = '#f85149';
-          }
-        }
-      })
-      .catch(() => {
-        if (formStatus) {
-          formStatus.textContent = 'Failed to send message. Please try again.';
-          formStatus.style.color = '#f85149';
-        }
-      })
-      .then(() => {
-        setTimeout(()=>{ if(formStatus) formStatus.textContent=''; },4000);
-      });
+      form.reset();
+      setTimeout(()=>{ if(formStatus) formStatus.textContent=''; },4000);
     });
   }
 
