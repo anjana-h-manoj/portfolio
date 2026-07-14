@@ -1289,9 +1289,9 @@ section:nth-of-type(even)::before {
 
 /* ── CONTACT ── */
 .contact-content {
-  display: grid;
-  grid-template-columns: 1fr 1.2fr;
-  gap: 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .contact-info {
@@ -1299,6 +1299,8 @@ section:nth-of-type(even)::before {
   display: flex;
   flex-direction: column;
   gap: 16px;
+  max-width: 500px;
+  width: 100%;
 }
 
 .contact-info h3 {
