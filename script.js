@@ -296,7 +296,14 @@
         return;
       }
       const mailto=`mailto:anjanamanoj1210@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent('From: '+name+' ('+email+')\n\n'+message)}`;
-      window.location.href=mailto;
+      
+      // Create a temporary link element and click it for better browser compatibility
+      const tempLink = document.createElement('a');
+      tempLink.href = mailto;
+      tempLink.style.display = 'none';
+      document.body.appendChild(tempLink);
+      tempLink.click();
+      document.body.removeChild(tempLink);
       if (formStatus) {
         formStatus.textContent='Opening your email client...';
         formStatus.style.color='#3fb950';
